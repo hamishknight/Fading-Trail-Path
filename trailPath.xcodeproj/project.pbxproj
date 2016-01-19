@@ -10,7 +10,6 @@
 		1C894BCD1C4E900900FFB1E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C894BCC1C4E900900FFB1E0 /* main.m */; };
 		1C894BD01C4E900900FFB1E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C894BCF1C4E900900FFB1E0 /* AppDelegate.m */; };
 		1C894BD31C4E900900FFB1E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C894BD21C4E900900FFB1E0 /* ViewController.m */; };
-		1C894BD61C4E900900FFB1E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C894BD41C4E900900FFB1E0 /* Main.storyboard */; };
 		1C894BD81C4E900900FFB1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C894BD71C4E900900FFB1E0 /* Assets.xcassets */; };
 		1C894BDB1C4E900900FFB1E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C894BD91C4E900900FFB1E0 /* LaunchScreen.storyboard */; };
 		1C894BE61C4E900900FFB1E0 /* trailPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C894BE51C4E900900FFB1E0 /* trailPathTests.m */; };
@@ -42,7 +41,6 @@
 		1C894BCF1C4E900900FFB1E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1C894BD11C4E900900FFB1E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1C894BD21C4E900900FFB1E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1C894BD51C4E900900FFB1E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C894BD71C4E900900FFB1E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C894BDA1C4E900900FFB1E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C894BDC1C4E900900FFB1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				1C894BD21C4E900900FFB1E0 /* ViewController.m */,
 				1C894BFE1C4E901600FFB1E0 /* view.h */,
 				1C894BFF1C4E901600FFB1E0 /* view.m */,
-				1C894BD41C4E900900FFB1E0 /* Main.storyboard */,
 				1C894BD71C4E900900FFB1E0 /* Assets.xcassets */,
 				1C894BD91C4E900900FFB1E0 /* LaunchScreen.storyboard */,
 				1C894BDC1C4E900900FFB1E0 /* Info.plist */,
@@ -250,7 +247,6 @@
 			files = (
 				1C894BDB1C4E900900FFB1E0 /* LaunchScreen.storyboard in Resources */,
 				1C894BD81C4E900900FFB1E0 /* Assets.xcassets in Resources */,
-				1C894BD61C4E900900FFB1E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +310,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1C894BD41C4E900900FFB1E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C894BD51C4E900900FFB1E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C894BD91C4E900900FFB1E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,6 +490,7 @@
 				1C894BF71C4E900900FFB1E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C894BF81C4E900900FFB1E0 /* Build configuration list for PBXNativeTarget "trailPathTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +499,7 @@
 				1C894BFA1C4E900900FFB1E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C894BFB1C4E900900FFB1E0 /* Build configuration list for PBXNativeTarget "trailPathUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +508,7 @@
 				1C894BFD1C4E900900FFB1E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

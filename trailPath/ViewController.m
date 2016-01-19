@@ -10,9 +10,6 @@
 
 #import "view.h"
 
-@interface ViewController ()
-
-@end
 
 @implementation ViewController
 

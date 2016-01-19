@@ -47,10 +47,16 @@ static CGFloat const pathStrokeWidth = 3.0;
 
 @implementation view {
     
+    /// The color of the trail
     UIColor* trailColor;
+    
+    /// The array of trail subpaths
     NSMutableArray* trailSubPaths;
     
+    /// Last point that the user touched
     CGPoint lastPoint;
+    
+    /// Whether the user is touching down
     BOOL touchedDown;
     
     CADisplayLink* displayLink;
@@ -60,7 +66,8 @@ static CGFloat const pathStrokeWidth = 3.0;
     if (self = [super initWithFrame:frame]) {
         
         trailSubPaths = [NSMutableArray array];
-        trailColor = [UIColor redColor];
+        
+        trailColor = [UIColor redColor]; // Replace with whatever color
         
         self.backgroundColor = [UIColor whiteColor];
     }
@@ -72,6 +79,7 @@ static CGFloat const pathStrokeWidth = 3.0;
     touchedDown = YES;
     
     [displayLink invalidate]; // In case it's already running.
+    
     displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkDidFire)];
     [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
 }
@@ -114,8 +122,8 @@ static CGFloat const pathStrokeWidth = 3.0;
     
     for (trailSubPath* subpath in trailSubPaths) {
         
-        if (subpath.delay > 0) subpath.delay -= deltaDelay;
-        else subpath.alpha -= deltaAlpha;
+        if (subpath.delay > 0) subpath.delay -= deltaDelay; // Decrement delay
+        else subpath.alpha -= deltaAlpha; // Else decrement alpha
         
         if (subpath.alpha < 0) { // Remove subpath
             [subpathsToRemove addObject:subpath];
@@ -138,7 +146,7 @@ static CGFloat const pathStrokeWidth = 3.0;
     CGContextSetStrokeColorWithColor(ctx, trailColor.CGColor);
     CGContextSetLineWidth(ctx, pathStrokeWidth);
     
-    for (trailSubPath* subpath in trailSubPaths) {
+    for (trailSubPath* subpath in trailSubPaths) { // Draw all the subpaths
         CGContextAddPath(ctx, subpath.path);
         CGContextSetAlpha(ctx, subpath.alpha);
         CGContextStrokePath(ctx);
